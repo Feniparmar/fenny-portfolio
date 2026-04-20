@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Frontend Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code"></i> My Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-4 fw-bold text-white mb-3">Hi, I’m Fenny — Frontend Developer</h1>
+                    <p class="lead text-light mb-4">I build polished, responsive web apps that solve real problems.</p>
+                    <p class="text-light mb-4">Let’s turn your next product idea into a delightful digital experience.</p>
+                    <div>
+                        <!-- <a href="#projects" class="btn btn-outline-light btn-lg me-3">View My Work</a> -->
+                        <a href="#contact" class="btn btn-outline-light btn-lg me-3">Get In Touch</a>
+                        <a href="images/FeniParmar_Resume.pdf" target="_blank" class="btn btn-outline-light btn-lg me-3">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/Untitled design.png" alt="Profile picture" class="img-fluid rounded-circle shadow about-image">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="mb-3">I am a passionate Frontend Developer with a strong focus on building responsive, user-friendly, and visually appealing web applications. Skilled in HTML, CSS,Bootstrap,Typescript, JavaScript and modern frameworks like Angular, I enjoy turning ideas into real digital experiences. I pay close attention to design, performance, and clean code, ensuring a smooth user experience across all devices. I am a quick learner, always eager to explore new technologies and improve my skills while contributing effectively to team projects.</p>
+                    <div class="social-links mb-4">
+                        <a href="https://github.com" class="btn btn-dark btn-sm me-2" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com" class="btn btn-primary btn-sm me-2" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-4">
+        <div class="container">
+            <h2 class="text-center mb-5">My Skills</h2>
+            <div id="skillCarousel" class="carousel slide skill-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="skill-card text-center p-4 h-100">
+                                    <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                                    <h5>HTML & CSS</h5>
+                                    <p class="text-muted">Responsive design & modern layouts</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                    <small>95%</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="skill-card text-center p-4 h-100">
+                                    <i class="fab fa-bootstrap fa-3x mb-3 text-success"></i>
+                                    <h5>Bootstrap</h5>
+                                    <p class="text-muted">Pre-built components & responsive grid</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" style="width: 92%"></div>
+                                    </div>
+                                    <small>92%</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="skill-card text-center p-4 h-100">
+                                    <i class="fab fa-js-square fa-3x mb-3 text-warning"></i>
+                                    <h5>JavaScript & TypeScript</h5>
+                                    <p class="text-muted">Interactive scripting & features<br>with strong type safety</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 90%"></div>
+                                    </div>
+                                    <small>90%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="skill-card text-center p-4 h-100">
+                                    <i class="fab fa-angular fa-3x mb-3 text-danger"></i>
+                                    <h5>Angular.js</h5>
+                                    <p class="text-muted">Building component-based<br>modern UIs</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" style="width: 80%"></div>
+                                    </div>
+                                    <small>80%</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="skill-card text-center p-4 h-100">
+                                    <i class="fab fa-git-alt fa-3x mb-3 text-dark"></i>
+                                    <h5>Git Version Control</h5>
+                                    <p class="text-muted">Source control & team<br>collaboration</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" style="width: 88%"></div>
+                                    </div>
+                                    <small>88%</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="skill-card text-center p-4 h-100">
+                                    <i class="fas fa-project-diagram fa-3x mb-3 text-info"></i>
+                                    <h5>Agile Methodology</h5>
+                                    <p class="text-muted">Iterative development & teamwork</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 85%"></div>
+                                    </div>
+                                    <small>85%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#skillCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skillCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators d-flex justify-content-center">
+                    <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="py-4 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6">
+        <div class="card project-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">SMVS Global Web Application</h5>
+                
+            <p class="card-text text-justify">
+        A comprehensive organization management web application designed to handle multiple internal operations efficiently. The platform includes modules such as attendance management, email communication, task (to-do) tracking, ticketing system, and account management.
+    </p>
+
+                <p><strong>Key Features:</strong></p>
+                <ul class="small text-muted">
+                    <li>Role-based access for different users</li>
+                    <li>Attendance tracking & reporting system</li>
+                    <li>Internal email communication module</li>
+                    <li>Task & ticket management system</li>
+                    <li>Optimized UI for smooth user experience</li>
+                </ul>
+                <p><strong>Tech:</strong> HTML, CSS, Bootstrap, JavaScript, Angular, TypeScript, REST API, Git</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-6">
+    <div class="card project-card h-100">
+        <div class="card-body">
+            <h5 class="card-title">AI-Powered Module Generator</h5>
+            
+            <p class="card-text text-justify">
+                An AI-based web application that generates functional modules based on user prompts. The system allows users to input requirements and automatically creates structured modules such as attendance management, simplifying development workflows and improving efficiency.
+            </p>
+
+            <p><strong>Key Features:</strong></p>
+            <ul class="small text-muted">
+                <li>AI prompt-based module generation</li>
+                <li>Dynamic attendance system creation</li>
+                <li>User-friendly interface for input & customization</li>
+                <li>Automated structure for faster development</li>
+                <li>Responsive and optimized UI</li>
+            </ul>
+
+            <p><strong>Tech:</strong> HTML, CSS, Bootstrap, JavaScript, ReactJS, TypeScript</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-4">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                    <div class="mt-4 text-center">
+                        <p class="text-muted mb-2">Or reach out directly:</p>
+                        <p><i class="fas fa-envelope"></i> feniparmar24@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 97272 62879</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 My Portfolio. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com" class="text-white me-3" target="_blank">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://linkedin.com" class="text-white me-3" target="_blank">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
